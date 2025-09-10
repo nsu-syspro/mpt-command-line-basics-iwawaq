@@ -1,3 +1,4 @@
+cd ~
 cd mpt-command-line-basics-iwawaq/data/
 mkdir new_dir1
 unzip archive-part2.zip -d new_dir1
