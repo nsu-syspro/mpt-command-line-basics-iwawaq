@@ -1,4 +1,5 @@
-mkdir new_dir
-tar -xf data/archive-part1.tar -C new_dir
-unzip data/archive-part2.zip -d new_dir
-tar -czf data/archive-combined.tar.gz new_dir
+mkdir temp_archive
+tar -xf data/archive-part1.tar -C temp_archive
+unzip data/archive-part2.zip -d temp_archive
+tar -czf data/archive-combined.tar.gz -C temp_archive
+rm -rf temp_archive
