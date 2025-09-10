@@ -1,7 +1,5 @@
-cd data/
-mkdir temp_dir1
-unzip archive-part2.zip -d temp_dir1
-tar -xf archive-part1.tar -C temp_dir1
-tar -czf archive-combined.tar.gz -C temp_dir1
+tar -xf ./data/archive-part1.tar -C .
+unzip -u ./data/archive-part2.zip -d .
 tar -czf archive-combined.tar.gz some
-rm -rf temp_dir1
+mv archive-combined.tar.gz data
+rm -rf some
