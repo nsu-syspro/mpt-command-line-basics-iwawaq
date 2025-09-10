@@ -1,5 +1,6 @@
-tar -xf ./data/archive-part1.tar -C .
 unzip -u ./data/archive-part2.zip -d .
-tar -czf archive-combined.tar.gz some
+tar -xf ./data/archive-part1.tar -C .
+mkdir eeh
+tar -czf archive-combined.tar.gz eeh
 mv archive-combined.tar.gz data
-rm -rf some
+rm -rf eeh
